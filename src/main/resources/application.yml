@@ -1,0 +1,17 @@
+server:
+  port: '8083'
+  
+jwt:
+  secret: secretkey123
+
+spring:
+  h2:
+    console:
+      enabled: 'true'
+  datasource:
+    username: sa
+    url: jdbc:h2:mem:h2db
+    driverClassName: org.h2.Driver
+    password: password
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect  
